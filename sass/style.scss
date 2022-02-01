@@ -1,0 +1,128 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "tips";
+@import "productos";
+@import "footer";
+@import "clientes";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient($colorPrincipal, $colorSecundario);
+}
+
+.bienvenida{
+    text-align: center;
+    color: $colorTerciario;
+    font-family: $fuentePrincipal;
+}
+
+/* queris -- inicio */
+@media screen and (max-width:320px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end
+    }
+    .logo{
+        width: max-content;
+    }
+    h1{
+        font-size: 50px;
+        font-family: $fuentePrincipal;
+        justify-content: center;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .medias{
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+    .footerLogo{
+        width: 200px;
+    }
+    .linksFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:599px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end
+    }
+    .logo{
+        width: max-content;
+    }
+    h1{
+        font-size: 50px;
+        font-family: $fuentePrincipal;
+        justify-content: center;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .medias{
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+    .footerLogo{
+        width: 200px;
+    }
+    .linksFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end
+    }
+    .logo{
+        width: max-content;
+    }
+    h1{
+        font-size: 50px;
+        font-family: $fuentePrincipal;
+        justify-content: center;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .medias{
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+    .footerLogo{
+        width: 200px;
+    }
+    .linksFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+/* queries -- fin */

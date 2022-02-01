@@ -1,0 +1,30 @@
+
+.footerLogo{
+    margin-top: 20px;
+    & .logoimg{
+        height: 100px;
+        width: 100px;
+    }
+    & .logoimg:hover{
+        color: white !important;
+        background-color: rgba(255, 99, 71, 0.445) ;
+        border-radius: 20px;
+    }
+    & .textFooter{
+        text-align: center;
+    }
+}
+.navFooter{
+    text-align: end;
+    & i{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
